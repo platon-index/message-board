@@ -6,9 +6,12 @@
   margin-bottom: 20px;
 }
 .micropost .name{
-  display: block;
+}
+.micropost .age{
+  padding-left: 0.5em;
 }
 .micropost .message{
+  display: block;
 }
 .micropost .buttons{
   padding-left: 1em;

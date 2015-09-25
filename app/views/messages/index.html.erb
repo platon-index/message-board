@@ -6,14 +6,23 @@
   <div class="panel-body">
     <% @messages.each do |message| %>
       <div class="micropost">
+        
         <span class="name">
           <span class="label label-info">
             <%= message.name %>
           </span>
         </span>
+        
+        <span class="age">
+          <span class="label label-success">
+            <%= message.age %>
+          </span>  
+        </span>
+        
         <sapn class="message">
           <%= message.body %>
         </span>
+        
         <span class="buttons pull-right">
           <%= link_to "edit" , edit_message_path(message), class: 'btn btn-xs btn-default' %>
           <%= link_to "destroy" , message , method: :delete, data: { confirm: '削除してもよろしいですか？' } , class: 'btn btn-xs btn-danger' %>
